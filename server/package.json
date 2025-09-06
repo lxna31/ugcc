@@ -2,7 +2,7 @@
   "name": "ugcc-server",
   "version": "1.0.0",
   "description": "Backend for University of Guyana Cybersecurity Club Project",
-  "main": "server.js",
+  "main": "index.js",
   "type": "module",
   "scripts": {
     "start": "node server.js",
