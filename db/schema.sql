@@ -1,0 +1,31 @@
+CREATE DATABASE IF NOT EXISTS ugcc;
+USE ugcc;
+
+-- Users for login
+CREATE TABLE IF NOT EXISTS users (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  username VARCHAR(100) NOT NULL UNIQUE,
+  password VARCHAR(255) NOT NULL
+);
+
+-- Club members
+CREATE TABLE IF NOT EXISTS members (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(100),
+  role VARCHAR(100),
+  year INT
+);
+
+-- Activities
+CREATE TABLE IF NOT EXISTS activities (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  year INT,
+  description TEXT
+);
+
+-- Resources
+CREATE TABLE IF NOT EXISTS resources (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  title VARCHAR(255),
+  link TEXT
+);
